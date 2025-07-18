@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OperaGX Wallpaper Generator Documentation</title>
+    <link rel="icon" type="image/png" href="C:\Users\raysh\Files\Photos\Pfp\pfp1_circle.png">
+    <link rel="stylesheet" href="C:\Users\raysh\Files\Coding\Webpages\Documentations\Documentation Style-1\Version-1\Styles\DocumentationStylesPurple.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--style>
+        .project-title {
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: #b5eaff;
+            margin-top: 32px;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        .overview-summary {
+            font-size: 1.18rem;
+            color: #e0f4ff;
+            margin-bottom: 18px;
+        }
+        .doc-section {
+            background: #23272b;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px #000a, 0 1px 4px #7ecfff33;
+            margin: 24px 0;
+            padding: 32px 28px;
+            transition: box-shadow 0.2s;
+        }
+        .doc-section:hover {
+            box-shadow: 0 8px 32px #7ecfff99, 0 2px 8px #000a;
+        }
+        .doc-section h2 {
+            color: #b5eaff;
+            margin-bottom: 12px;
+        }
+        .doc-section code, .doc-section pre {
+            background: #18192a;
+            color: #e0f4ff;
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 1rem;
+        }
+        .doc-section ul {
+            margin-left: 24px;
+        }
+        .doc-section li {
+            margin-bottom: 8px;
+        }
+        .example {
+            background: #18192a;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 12px 0;
+        }
+        .feature-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+        .feature-list li {
+            background: #1e2a38;
+            border-radius: 8px;
+            padding: 10px 18px;
+            min-width: 220px;
+            box-shadow: 0 2px 8px #000a;
+        }
+        .code-section {
+            background: #18192a;
+            border-radius: 12px;
+            padding: 18px 16px;
+            margin: 18px 0;
+            font-size: 1.05rem;
+            overflow-x: auto;
+        }
+        .code-line {
+            display: block;
+            font-family: 'Fira Mono', 'Consolas', monospace;
+            color: #b5eaff;
+            padding-left: 8px;
+            border-left: 2px solid #7ecfff;
+            margin-bottom: 2px;
+        }
+        .section-toggle {
+            cursor: pointer;
+            color: #b5eaff;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+        .section-content {
+            display: none;
+            margin-top: 8px;
+        }
+        .section-toggle.open + .section-content {
+            display: block;
+        }
+        @media (max-width: 700px) {
+            .doc-section { padding: 18px 8px; }
+            .project-title { font-size: 1.3rem; }
+        }
+    </style><!---->
+    <style>
+        .overview-title {
+            margin-bottom: 5%;
+        }
+        .source-code-wrapper {
+            margin-top: 2%;
+        }
+        .credits {
+            color: #b5eaff;
+            font-size: 1.1rem;
+            margin-top: 16px;
+        }
+        .license {
+            color: #e0f4ff;
+            font-size: 1rem;
+            margin-top: 8px;
+        }
+    </style>
+    <!--script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.section-toggle').forEach(function (toggle) {
+                toggle.addEventListener('click', function () {
+                    this.classList.toggle('open');
+                });
+            });
+        });
+    </script><!---->
+</head>
+<body>
+    <header>
+        <div class="header-main">
+            <img class="header-icon" src="C:\Users\raysh\Files\Photos\Pfp\pfp1_circle.png" alt="Project Icon">
+            <div class="header-title-group">
+                <h1 class="project-title">OperaGX : Wallpaper Generator</h1>
+                <div class="header-script-label">C# Scripts : <code>LiveWallpaperGenerator</code></div>
+            </div>
+        </div>
+        <div class="header-socials">
+            <div class="header-script-label">~ by Light</div>
+            <a class="header-btn" href="https://github.com/ItzzLight" target="_blank" title="GitHub"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"><span class="header-btn-text">GitHub</span></a>
+            <a class="header-btn" href="https://www.instagram.com/_shubhamray/" target="_blank" title="Instagram"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"><span class="header-btn-text">Instagram</span></a>
+            <a class="header-btn" href="https://www.facebook.com/ItzzLight7" target="_blank" title="Facebook"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"><span class="header-btn-text">Facebook</span></a>
+            <a class="header-btn" href="https://www.reddit.com/user/Itzz_Light/" target="_blank" title="Reddit"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png" alt="Reddit"><span class="header-btn-text">Reddit</span></a>
+        </div>
+    
+    </header>
+    <div class="main-body-card">
+        <div class="container">
+            <h2 class="overview-title section-slide-header">Overview</h2>
+            <div class="overview-summary doc-section">
+                <p>
+                    <b>OperaGX Wallpaper Generator</b> is a modern C# tool for creating OperaGX Persona Packs from your videos and images. It automates video conversion, thumbnail extraction, and packaging for seamless distribution and import into OperaGX.<br>
+                    <br>
+                    <span style="color:#b5eaff;">Enjoy a streamlined experience for customizing your browser with animated wallpapers!</span>
+                </p>
+            </div>
+            <h2 class="overview-title section-slide-header">Features</h2>
+            <div class="doc-section">
+                <ul class="feature-list">
+                    <li>Converts MP4 videos to WebM format using FFmpeg</li>
+                    <li>Extracts thumbnails or first frames from videos</li>
+                    <li>Copies or renames images for pack inclusion</li>
+                    <li>Generates persona.ini configuration files</li>
+                    <li>Packages all assets into a zip file for OperaGX</li>
+                </ul>
+            </div>
+            <h2 class="overview-title section-slide-header">Requirements</h2>
+            <div class="doc-section">
+                <ul>
+                    <li><a href="https://dotnet.microsoft.com/download" target="_blank">.NET 9.0 SDK</a></li>
+                    <li><a href="https://ffmpeg.org/download.html" target="_blank">FFmpeg</a> (update the path in <code>VideoConverter.cs</code> if needed)</li>
+                </ul>
+            </div>
+            <h2 class="overview-title section-slide-header">Usage</h2>
+            <div class="doc-section">
+                <ol>
+                    <li>Place your video (<code>.mp4</code> or <code>.webm</code>) and optional image (<code>.jpg</code>, <code>.jpeg</code>, <code>.png</code>) in the <code>input/</code> folder.</li>
+                    <li>Run the project:<br>
+                        <div class="example">
+                            <code>dotnet run "WallpaperName" 1 "ProjectFolder" false false</code>
+                        </div>
+                        <ul>
+                            <li><b>WallpaperName</b>: Name for the persona pack (optional)</li>
+                            <li><b>1</b>: Version (default: 1)</li>
+                            <li><b>ProjectFolder</b>: Output folder name (optional)</li>
+                            <li><b>false</b>: Quick convert (use fast settings, optional)</li>
+                            <li><b>false</b>: Use first frame as thumbnail (optional)</li>
+                        </ul>
+                    </li>
+                    <li>The generated pack will be in the <code>output/</code> folder as a <code>.zip</code> file.</li>
+                </ol>
+                <div class="example">
+                    <b>Example:</b><br>
+                    <code>dotnet run "Light Theme Pack 1" 1 "ThemePack1" false true</code>
+                </div>
+            </div>
+            <h2 class="overview-title section-slide-header">How it Works</h2>
+            <div class="doc-section">
+                <ul>
+                    <li>If no image is provided, extracts a thumbnail or first frame from the video.</li>
+                    <li>Converts video to WebM if needed.</li>
+                    <li>Creates a <code>persona.ini</code> file with metadata.</li>
+                    <li>Zips all files for easy import into OperaGX.</li>
+                </ul>
+            </div>
+            <h2 class="overview-title section-slide-header">Source Code</h2>
+            <div class="doc-section doc-section-hover">
+                <div class="overview-summary source-summary-hover">
+                    <button class="source-toggle styled-source-toggle" id="sourceToggleBtn"><div class="header-script-label">Program.cs</div></button>
+                    <div class="section-content">
+                        <div class="source-code-wrapper">
+                            <pre class="source-pre">
+<code class="language-csharp"><span class="code-line">class Program</span>
+<span class="code-line">{</span>
+<span class="code-line">    static void Main(string[] args)</span>
+<span class="code-line">    {</span>
+<span class="code-line">        int n = 0;</span>
+<span class="code-line">        // If the first argument is an integer, treat it as version and shift indices</span>
+<span class="code-line">        if (args.Length > 0 && int.TryParse(args[0], out _))</span>
+<span class="code-line">            n = -1;</span>
+<span class="code-line"></span>
+<span class="code-line">        // If n is -1, set to a blank string, else, check for Name.</span>
+<span class="code-line">        string name = n == -1 ? "" : (args.Length > n ? args[n] : "");</span>
+<span class="code-line">        string version = args.Length > n + 1 ? args[n + 1] : "1";</span>
+<span class="code-line"></span>
+<span class="code-line">        if (args.Length > n + 2 && bool.TryParse(args[n + 2], out bool _))</span>
+<span class="code-line">            n = -2; // Skip project name if it's a boolean</span>
+<span class="code-line">        string projectName = n == -2 ? "" : (args.Length > n + 2 ? args[n + 2] : "");</span>
+<span class="code-line"></span>
+<span class="code-line">        bool quickConvert = args.Length > n + 3 && bool.TryParse(args[n + 3], out bool parsed) ? parsed : false;</span>
+<span class="code-line">        bool firstFrame = args.Length > n + 4 && bool.TryParse(args[n + 4], out parsed) ? parsed : false;</span>
+<span class="code-line"></span>
+<span class="code-line">        // If name is blank, use video file name from input folder</span>
+<span class="code-line">        if (string.IsNullOrWhiteSpace(name))</span>
+<span class="code-line">        {</span>
+<span class="code-line">            var inputDir = "./input";</span>
+<span class="code-line">            var videoFile = Directory.GetFiles(inputDir, "*.webm").FirstOrDefault()</span>
+<span class="code-line">                ?? Directory.GetFiles(inputDir, "*.mp4").FirstOrDefault();</span>
+<span class="code-line">            name = videoFile != null ? Path.GetFileNameWithoutExtension(videoFile) : "Live Custom Wallpaper";</span>
+<span class="code-line">        }</span>
+<span class="code-line"></span>
+<span class="code-line">        // If projectName is blank, use name or fallback</span>
+<span class="code-line">        if (string.IsNullOrWhiteSpace(projectName))</span>
+<span class="code-line">        {</span>
+<span class="code-line">            projectName = !string.IsNullOrWhiteSpace(name) ? name : "LiveWallpaper";</span>
+<span class="code-line">        }</span>
+<span class="code-line"></span>
+<span class="code-line">        bool success = PersonaPackBuilder.BuildPack(name, version, projectName, quickConvert, firstFrame);</span>
+<span class="code-line"></span>
+<span class="code-line">        Console.WriteLine(success ? "Pack created successfully!" : "Pack creation failed.");</span>
+<span class="code-line">    }</span>
+<span class="code-line">}</span>
+                        </code></pre>
+                        <div class="line-numbers">
+<span>1</span>
+<span>2</span>
+<span>3</span>
+<span>4</span>
+<span>5</span>
+<span>6</span>
+<span>7</span>
+<span>8</span>
+<span>9</span>
+<span>10</span>
+<span>11</span>
+<span>12</span>
+<span>13</span>
+<span>14</span>
+<span>15</span>
+<span>16</span>
+<span>17</span>
+<span>18</span>
+<span>19</span>
+<span>20</span>
+<span>21</span>
+<span>22</span>
+<span>23</span>
+<span>24</span>
+<span>25</span>
+<span>26</span>
+<span>27</span>
+<span>28</span>
+<span>29</span>
+<span>30</span>
+<span>31</span>
+<span>32</span>
+<span>33</span>
+<span>34</span>
+<span>35</span>
+<span>36</span>
+<span>37</span>
+<span>38</span>
+<span>39</span>
+<span>40</span>
+<span>41</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!--div class="animated-fadein-text scroll-fade-note" style="margin-top:16px; color:#b5eaff;">[You can add extra notes or manual documentation here]</div>
+                <!---->
+            </div>
+            
+            <h2 class="overview-title section-slide-header">Credits</h2>
+            <div class="doc-section credits">
+                <ul>
+                    <li>Author: Itzz Light</li>
+                    <li>FFmpeg for video processing</li>
+                </ul>
+            </div>
+            
+            <h2 class="overview-title section-slide-header">License</h2>
+            <div class="doc-section license">
+                <p>MIT License</p>
+            </div>
+            <div class="overview-summary doc-section" style="text-align:center; color:#b5eaff; font-size:1.1rem; margin-top:32px;">
+                <span>Made with ❤️ for OperaGX users. <br> <span style="font-size:0.95rem; color:#e0f4ff;">Enjoy customizing your browser!</span></span>
+            </div>
+        </div>
+    </div>
+    <script src="C:\Users\raysh\Files\Coding\Webpages\Documentations\Documentation Style-1\Version-1\DocumentationScript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    
+    <script>
+    window.addEventListener('DOMContentLoaded', function () {
+        var btn = document.getElementById('sourceToggleBtn');
+        var content = btn.nextElementSibling;
+        btn.addEventListener('click', function () {
+            if (content) {
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                } else {
+                    content.style.display = 'block';
+                }
+            }
+        });
+        // Start hidden
+        if (content) {
+            content.style.display = 'none';
+        }
+    });
+    </script>
+</body>
+</html>
