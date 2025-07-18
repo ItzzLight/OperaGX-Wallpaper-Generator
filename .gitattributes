@@ -1,5 +1,5 @@
 # Ignore HTML and other docs for language stats
-docs.html linguist-documentation
+*.html linguist-documentation
 README.md linguist-documentation
 *.md linguist-documentation
 
