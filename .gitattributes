@@ -1,0 +1,12 @@
+# Ignore HTML and other docs for language stats
+docs.html linguist-documentation
+README.md linguist-documentation
+*.md linguist-documentation
+
+# Optionally mark generated folders or templates (if any)
+input/** linguist-vendored
+output/** linguist-vendored
+
+# Optional: explicitly declare source folders
+*.cs linguist-language=C#
+*.js linguist-language=JavaScript
